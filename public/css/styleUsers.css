@@ -1,0 +1,13 @@
+h2.usersHeader {
+    display: inline-flex;
+    margin-bottom: 2rem;
+}
+ul.usersPages {
+    list-style-type: none;
+    display: inline-flex;
+    float: right;
+}
+    li.usersLi {
+        margin: 0 5px;
+        font: 1.8rem bold;
+    }

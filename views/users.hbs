@@ -1,0 +1,39 @@
+<h2 class="usersHeader">Users</h2>
+<ul class="usersPages">
+    <li class="usersLi"><a href="users/1">[1-10]</a></li>
+    <li class="usersLi"><a href="users/2">[11-20]</a></li>
+    <li class="usersLi"><a href="users/3">[21-30]</a></li>
+    <li class="usersLi"><a href="users/4">[31-40]</a></li>
+    <li class="usersLi"><a href="users/5">[41-50]</a></li>
+    <li class="usersLi"><a href="users/6">[51-60]</a></li>
+    <li class="usersLi"><a href="users/7">[61-70]</a></li>
+    <li class="usersLi"><a href="users/8">[71-80]</a></li>
+    <li class="usersLi"><a href="users/9">[81-90]</a></li>
+    <li class="usersLi"><a href="users/10">[91-100]</a></li>
+</ul>
+<table class="table table-condensed" id="tableContainer">
+    <thead class="customHeader"> 
+        <tr>  
+            <th id="th0" class='text-center'>id</th>
+            <th id="th1" class='text-center'>first_name</th>
+            <th id="th2" class='text-center'>last_name</th>
+            <th id="th3" class='text-center'>email</th>
+            <th id="th4" class='text-center'>country</th>
+            <th id="th5" class='text-center'>modified</th>
+            <th id="th6" class='text-center'>vip</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each users}}
+            <tr class="tr">
+                <td>{{this.id}}</td>
+                <td>{{this.first_name}}</td>
+                <td>{{this.last_name}}</td>
+                <td>{{this.email}}</td>
+                <td>{{this.country}}</td>
+                <td>{{this.modified}}</td>
+                <td>{{this.vip}}</td>
+            </tr> 
+        {{/each}}
+    </tbody>
+</table>

@@ -1,0 +1,41 @@
+<h2 class="page-header mb-2">Register</h2>
+{{#if errors}}
+    {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+    {{/each}}
+{{/if}}
+<form method="post" action="/register">
+    <div class="form-group">
+        <label for="id" class="font-weight-bold">id:</label>
+        <input type="number" class="form-control" placeholder="Enter id" name="id">
+    </div>
+    <div class="form-group">
+        <label for="first_name" class="font-weight-bold">first_name:</label>
+        <input type="text" class="form-control" placeholder="Enter first_name" name="first_name">
+    </div>
+    <div class="form-group">
+        <label for="last_name" class="font-weight-bold">last_name:</label>
+        <input type="text" class="form-control" placeholder="Enter last_name" name="last_name">
+    </div>
+    <div class="form-group">
+        <label for="email" class="font-weight-bold">email:</label>
+        <input type="email" class="form-control" placeholder="Enter email" name="email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="country" class="font-weight-bold">country:</label>
+        <input type="text" class="form-control" placeholder="Enter country" name="country">
+    </div>
+    <div class="form-group">
+        <label for="modified" class="font-weight-bold">modified:</label>
+        <input type="data" class="form-control" placeholder="Example 2015-05-16" name="modified">
+    </div>
+    <div class="form-group">
+        <label for="vip" class="font-weight-bold">vip:</label>
+        <select class="selectpicker form-control" name="vip">
+            <option>true</option>
+            <option>false</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
